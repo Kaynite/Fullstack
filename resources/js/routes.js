@@ -1,5 +1,5 @@
 import Home from "./components/Home";
-import Test from "./components/Test";
+import Test from "./views/Template";
 
 let routes = [
     {

@@ -1,9 +1,7 @@
 require("./bootstrap");
 
 import Vue from "vue";
-import Sidebar from "./layout/Sidebar";
-import AppFooter from "./layout/Footer";
-import AppHeader from "./layout/Header";
+import App from './components/App'
 import ScrollTop from "./layout/ScrollTop";
 import VueRouter from "vue-router";
 import routes from "./routes";
@@ -18,10 +16,8 @@ let router = new VueRouter({
 new Vue({
     el: "#app",
     components: {
+        App,
         ScrollTop,
-        AppHeader,
-        Sidebar,
-        AppFooter
     },
     router
 });
